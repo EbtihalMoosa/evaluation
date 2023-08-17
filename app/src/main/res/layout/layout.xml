@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+     android:id="@+id/card"
+     android:layout_width="300dp"
+      android:layout_height="400dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="@drawable/y"
+
+      >
+      <TextView
+          android:id="@+id/review"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Review"
+          android:textSize="25dp"
+          android:layout_marginStart="44dp"
+          android:layout_marginTop="99dp"
+          android:textColor="#7eb3c4"
+          android:textStyle="bold"
+          />
+      <TextView
+          android:id="@+id/question"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Rating the product!"
+          android:textSize="15dp"
+          android:textStyle="italic"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="150dp"
+          />
+      <EditText
+          android:id="@+id/comment"
+          android:layout_width="220dp"
+          android:layout_height="40dp"
+          android:text="add comment.."
+          android:textSize="13dp"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="260dp"
+
+
+          />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:text="submit"
+            android:textSize="15dp"
+            android:backgroundTint="#7eb3c4"
+            android:layout_marginBottom="200dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="330dp"
+
+            />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+  </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
